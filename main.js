@@ -1,7 +1,7 @@
 const defaultAttributeScores = [15, 14, 13, 12, 10, 8];
 
 class Player {
-    constructor(characterName = 'John'){
+    constructor(characterName = 'P1'){
         this.name = characterName;
         this.attributes = {
             strength: 0,
@@ -38,7 +38,7 @@ class Player {
 
 const player01 = new Player();
 player01.printPlayer();
-const player02 = new Player('Smith');
+const player02 = new Player('P2');
 player02.rollAttributes();
 player02.printPlayer();
 
