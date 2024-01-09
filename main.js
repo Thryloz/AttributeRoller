@@ -1,7 +1,7 @@
 const defaultAttributeScores = [15, 14, 13, 12, 10, 8];
 
 class Player {
-    constructor(characterName = 'P1'){
+    constructor(characterName = 'Fish Cake'){
         this.name = characterName;
         this.attributes = {
             strength: 0,
@@ -38,7 +38,7 @@ class Player {
 
 const player01 = new Player();
 player01.printPlayer();
-const player02 = new Player('P2');
+const player02 = new Player('Carrot');
 player02.rollAttributes();
 player02.printPlayer();
 
@@ -70,5 +70,5 @@ function sumArrayElements(array) {
         sum += array[i];
     }
     return sum;
-    // this function can be reduced to: return array.reduce((total, currentNumber) => total + currentNumber);
+    // this function can be shortened to: return array.reduce((total, currentNumber) => total + currentNumber);
 }
